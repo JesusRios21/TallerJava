@@ -5,13 +5,20 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         int numero = 0;
+        int suma = 0;
 
         System.out.println("¡Hola mundo desde GitHub Codespaces! 👋");
 
-        while (numero != 5) {
-            System.out.println("ingresa una numero: ");
-         numero = sc.nextInt();
+        while (numero != 3) {
+            System.out.println("Ingresa un número (3 para salir): ");
+            numero = sc.nextInt();
+            if (numero == 3) {
+                break;
+            }
+            suma += numero;
         }
+
+        System.out.println("La suma total es: " + suma);
 
         sc.close();
     }
